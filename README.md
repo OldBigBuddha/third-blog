@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OldBigBuddha's new Blog
 
-## Getting Started
+[![MIT License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 
-First, run the development server:
+「[Simple is Best](https://oldbigbuddha.dev/)」のソースコードです。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## LICENSE
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+(c) 2025 OldBigBuddha.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Source Code
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This application includes the work that is distributed in the MIT License.
 
-## Learn More
+See [./LICENSE](./LICENSE).
 
-To learn more about Next.js, take a look at the following resources:
+### Other works
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[![CC BY-SA](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
-## Deploy on Vercel
+For example: photos, movies, documents, poems.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Author: OldBigBuddha
+- Title: You can get a title from post's <title><Title></title> in raw code.
+- URL: The post's URL
+- Year: You can see the top of post.
