@@ -1,0 +1,138 @@
+/* p */
+p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+p code {
+    font-size: 0.875rem;
+    font-family: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,"Liberation Mono", "Courier New", monospace';
+    padding: .1rem .5rem;
+    text-align: center;
+    background-color: #272822;
+    color: #f8f8f2;
+    border-radius: 0.3em;
+    white-space: nowrap;
+}
+
+/* a */
+a {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* code */
+pre {
+    background-color: #272822;
+    color: #f8f8f2;
+    border-radius: 0.3em;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+pre code {
+    white-space: pre;
+}
+
+/* h2 */
+h2 {
+    color: #2d3748;
+    font-size: 1.5rem;
+    font-family:
+        "fot-tsukubrdgothic-std, -apple-system, BlinkMacSystemFont,Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,Helvetica Neue, sans-serif";
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h2::before {
+    content: "#";
+    margin-right: 0.5rem;
+}
+
+/* h3 */
+h3 {
+    color: #2d3748;
+    font-size: 1.25rem;
+    font-family:
+        "fot-tsukubrdgothic-std, -apple-system, BlinkMacSystemFont,Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,Helvetica Neue, sans-serif";
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h3::before {
+    content: "##";
+    margin-right: 0.5rem;
+}
+
+/* h4 */
+h4 {
+    color: #2d3748;
+    font-size: 1rem;
+    font-family:
+        "fot-tsukubrdgothic-std, -apple-system, BlinkMacSystemFont,Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,Helvetica Neue, sans-serif";
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+h4::before {
+    content: "###";
+    margin-right: 0.5rem;
+}
+
+/* ul/ol */
+ul,
+ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ol li {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+/* image */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+/* quote */
+blockquote {
+    max-width: 500px;
+    padding: 1em 1.5em;
+    border-left: 4px solid #f2f2f2;
+    color: #333333;
+}
+
+blockquote:has(cite) {
+    padding-bottom: .5em;
+}
+
+blockquote p {
+    margin-top: 0;
+}
+
+blockquote cite {
+    display: block;
+    color: #737373;
+    font-size: .8em;
+    text-align: right;
+}
