@@ -24,10 +24,12 @@ type Props = {
 
 export async function generateMetadata(
   { params }: Props,
-  _: ResolvingMetadata
+  md: ResolvingMetadata
 ): Promise<Metadata> {
   // read route params
   const id = (await params).slug
+
+  console.log("resolve metadata", md)
 
   // fetch data
   const post = await getPostBySlug(id)
