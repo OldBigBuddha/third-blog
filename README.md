@@ -1,4 +1,6 @@
-# OldBigBuddha's new Blog
+# Simple is Best
+
+![Vercel](https://vercelbadge.vercel.app/api/OldBigBuddha/third-blog)
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 
