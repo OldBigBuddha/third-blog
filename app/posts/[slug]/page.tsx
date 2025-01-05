@@ -30,8 +30,6 @@ export async function generateMetadata(
     // read route params
     const id = (await params).slug
 
-    console.log("resolve metadata", md)
-
     // fetch data
     const post = await getPostBySlug(id)
 
