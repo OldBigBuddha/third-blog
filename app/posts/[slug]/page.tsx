@@ -7,15 +7,13 @@ import "@/app/styles/post.css"
 import { ResolvingMetadata, Metadata } from 'next'
 import Link from 'next/link'
 
-export const dynamic = 'force-static'
-
 // SSG
-export async function generateStaticParams(): Promise<Array<PageProps>> {
+export async function generateStaticParams() {
     const files = await listPostFilenames()
     const slugs = files.map((file) => file.replace(/\.md$/, ''))
 
     return slugs.map((slug) => ({
-        params: { slug }
+        slug: slug,
     }))
 }
 type Props = {
@@ -25,7 +23,7 @@ type Props = {
 
 export async function generateMetadata(
     { params }: Props,
-    md: ResolvingMetadata
+    _md: ResolvingMetadata
 ): Promise<Metadata> {
     // read route params
     const id = (await params).slug
@@ -57,11 +55,6 @@ export async function generateMetadata(
     }
 }
 
-type PageProps = {
-    readonly params: {
-        readonly slug: string
-    }
-}
 export default async function Page({ params }: Props) {
     const slug = (await params).slug
     const post = await getPostBySlug(slug)
