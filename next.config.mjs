@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    reactStrictMode: true,
+    output: "export",
+    images: {
+        domains: [
+            "res.cloudinary.com",
+            "oldbigbuddha.dev",
+        ],
+        unoptimized: true,
+    }
+};
 
 export default nextConfig;
