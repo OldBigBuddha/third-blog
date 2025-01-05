@@ -1,7 +1,7 @@
 import fs from 'fs/promises'
 import path from 'path'
 import matter from 'front-matter'
-import { Post } from '@/types/blog'
+import { asSlug, Post } from '@/types/blog'
 import { markdownToHtml } from './markdown'
 
 const postsDirectory = path.join(process.cwd(), 'content/posts')
@@ -29,7 +29,7 @@ export const getPostBySlug = async (slug: string): Promise<Post> => {
   const parsedBody = await markdownToHtml(body);
 
   return{
-    slug: slug,
+    slug: asSlug(slug),
     title: attributes.title,
     raw: body,
     html: parsedBody,
