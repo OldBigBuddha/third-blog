@@ -1,4 +1,4 @@
-import { CalendarDays } from 'lucide-react'
+import { CalendarDays, TagIcon } from 'lucide-react'
 import { Separator } from "@/components/ui/separator"
 import { notFound } from "next/navigation"
 import { getPostBySlug, listPostFilenames } from "@/lib/posts"
@@ -77,7 +77,7 @@ export default async function Page({ params }: Props) {
                 <main className="mx-auto max-w-2xl">
                     <nav className='mb-2'>
                         <a href='/' className='text-gray-600 hover:text-gray-800 hover:underline'>
-                        ← ホームへ戻る
+                            ← ホームへ戻る
                         </a>
                     </nav>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.0/styles/github-dark.min.css"></link>
@@ -124,6 +124,24 @@ export default async function Page({ params }: Props) {
                                 className="prose prose-stone mx-auto max-w-none dark:prose-invert prose-headings:font-serif prose-headings:font-medium prose-p:text-base prose-p:leading-7 prose-blockquote:border-l-primary"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
+
+                            <Separator className="my-8" />
+
+                            {/* Tags */}
+                            <div className="flex items-center gap-2">
+                                {post.tags.length > 0 && (
+                                    <>
+                                        <TagIcon className="size-4 text-center" aria-hidden="true" />
+                                        <div className="flex items-center justify-center gap-2">
+                                            {post.tags.map((tag) => (
+                                                <span key={tag}>
+                                                    {tag}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </>
+                                )}
+                            </div>
                         </div>
                     </article>
 
