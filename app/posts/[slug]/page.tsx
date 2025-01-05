@@ -5,6 +5,7 @@ import { getPostBySlug, listPostFilenames } from "@/lib/posts"
 
 import "@/app/styles/post.css"
 import { ResolvingMetadata, Metadata } from 'next'
+import Link from 'next/link'
 
 export const dynamic = 'force-static'
 
@@ -76,9 +77,9 @@ export default async function Page({ params }: Props) {
             <div className="min-h-screen bg-[#FCFBF7] px-4 py-12 dark:bg-slate-950">
                 <main className="mx-auto max-w-2xl">
                     <nav className='mb-2'>
-                        <a href='/' className='text-gray-600 hover:text-gray-800 hover:underline'>
+                        <Link href='/' className='text-gray-600 hover:text-gray-800 hover:underline'>
                             ← ホームへ戻る
-                        </a>
+                        </Link>
                     </nav>
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.0/styles/github-dark.min.css"></link>
                     <article aria-labelledby="article-title">
