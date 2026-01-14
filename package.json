@@ -2,7 +2,7 @@
   "type": "module",
   "name": "blog",
   "version": "0.1.0",
-  "packageManager": "pnpm@9.15.2",
+  "packageManager": "pnpm@9.15.9",
   "engineStrict": true,
   "private": true,
   "scripts": {
